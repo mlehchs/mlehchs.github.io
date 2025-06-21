@@ -11,6 +11,53 @@
                 <a href="menu.html">Menu</a></li>
                 <a href="about.html">About</a></li>
                 <a href="contact.html">Contact</a></li>
+		```html
+<form action="" method="POST">
+  <fieldset>
+    <legend>Personal Details</legend>
+
+    <label for="name">Name (required):</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email (required):</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="tel">Telephone:</label><br>
+    <input list="tel-prefixes" id="tel" name="tel">
+    <datalist id="tel-prefixes">
+      <option value="+60">
+      <option value="+61">
+      <option value="+65">
+    </datalist><br><br>
+
+    <label for="website">Website:</label><br>
+    <input list="website-options" id="website" name="website">
+    <datalist id="website-options">
+      <option value="http://">
+      <option value="https://">
+    </datalist><br><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Enquiry Information</legend>
+
+    <label for="enquiry-title">Title:</label><br>
+    <input type="text" id="enquiry-title" name="enquiry-title"><br><br>
+
+    <label for="enquiry-type">Enquiry Type:</label><br>
+    <select id="enquiry-type" name="enquiry-type">
+      <option value="general">General</option>
+      <option value="support">Support</option>
+      <option value="feedback">Feedback</option>
+    </select><br><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="5" cols="40"></textarea><br><br>
+  </fieldset>
+
+  <br>
+  <button type="submit">Send Enquiry</button>
+</form>
 	        </nav>
 		<h2><ins>Contact</ins>
 		<h3>123, Jalan Piza, 17220 Georgetown, Penang</br>
