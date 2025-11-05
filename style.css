@@ -1,4 +1,4 @@
-/* Reset and global styles */
+/* Reset & global settings */
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +7,21 @@
 }
 
 body {
-    background: url('images/pizza.background.jpg') no-repeat center center fixed; /* Add your background image here */
+    background: url('images/pizza-background.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
     line-height: 1.6;
 }
 
-/* Header and navigation */
-header {
-    background-color: #2196F3; /* Blue */
-    color: white;
-    padding: 20px 0;
+/* Header & navigation */
+header, footer {
+    padding: 20px;
     text-align: center;
+}
+
+header {
+    background-color: #1565c0; /* blue */
+    color: white;
 }
 
 header h1 {
@@ -37,7 +40,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: #64B5F6; /* Light blue */
+    background-color: #64b5f6; /* light blue */
 }
 
 nav ul li {
@@ -53,7 +56,7 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #BBDEFB; /* Lighter blue on hover */
+    color: #bbdefb; /* lighter blue */
 }
 
 /* Main content */
@@ -61,8 +64,8 @@ main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black for readability */
-    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay for readability */
+    border-radius: 10px;
 }
 
 section, .menu-section {
@@ -74,35 +77,40 @@ article p, .menu-item p {
     margin-bottom: 15px;
 }
 
+h2, h3, h4 {
+    margin-bottom: 10px;
+}
+
 h2 {
-    color: #64B5F6;
+    color: #64b5f6; /* light blue */
 }
 
 h3 {
-    color: #2196F3;
+    color: #2196f3; /* medium blue */
 }
 
 h4 {
-    color: #BBDEFB;
+    color: #bbdefb; /* lightest blue */
 }
 
-/* Form styles */
+/* Forms */
 form {
     background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
+    border: 2px solid #2196f3;
     border-radius: 8px;
     color: #000;
 }
 
 fieldset {
-    border: 1px solid #2196F3;
+    border: 1px solid #64b5f6;
     padding: 15px;
     margin-bottom: 15px;
 }
 
 legend {
     font-weight: bold;
-    color: #0D47A1;
+    color: #0d47a1; /* dark blue */
 }
 
 label {
@@ -123,7 +131,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #2196F3;
+    background-color: #2196f3;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -134,12 +142,12 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0D47A1;
+    background-color: #0d47a1;
 }
 
 /* Footer */
 footer {
-    background-color: #2196F3;
+    background-color: #1565c0;
     color: white;
     text-align: center;
     padding: 15px 10px;
@@ -152,7 +160,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #BBDEFB;
+    color: #bbdefb;
 }
 
 /* Responsive */
