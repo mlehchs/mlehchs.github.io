@@ -1,19 +1,24 @@
-/* General Reset */
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* Body */
 body {
-    background-color: #fff8f0;
-    color: #333;
+    background-color: #000000; 
+    color: #ffffff; 
     line-height: 1.6;
 }
 
-/* Header */
+
+header, footer {
+    background-color: #111111;
+    padding: 20px;
+    text-align: center;
+}
+
+
 header {
     background-color: #ff7043;
     color: white;
@@ -32,7 +37,6 @@ header h3 {
     margin-bottom: 10px;
 }
 
-/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -56,14 +60,12 @@ nav ul li a:hover {
     color: #ffe0b2;
 }
 
-/* Main Content */
 main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
 }
 
-/* Sections and Articles */
 section {
     margin-bottom: 30px;
 }
@@ -73,7 +75,6 @@ article p {
     margin-bottom: 15px;
 }
 
-/* Menu Page */
 h2, h3, h4 {
     margin-bottom: 10px;
 }
@@ -90,7 +91,6 @@ h4 {
     color: #795548;
 }
 
-/* Forms (Contact Page) */
 form {
     background-color: #fff3e0;
     padding: 20px;
@@ -141,7 +141,6 @@ input[type="submit"]:hover {
     background-color: #e64a19;
 }
 
-/* Footer */
 footer {
     background-color: #ff7043;
     color: white;
@@ -159,7 +158,6 @@ footer a:hover {
     color: #ffe0b2;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
