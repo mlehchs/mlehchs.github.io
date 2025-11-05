@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Michele Portfolio - Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michele Lee">
+    <meta name="description" content="For More Information">
+    <meta name="theme-color" content="#f4b342">
+    <link rel="icon" href="images/pizza.logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="style.css">
+    <title>Michele's Portfolio - Contact Page</title>
 </head>
 <body>
+    <header>
+        <h1>More Than Just Pizza</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Pizza</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="menu.html">Menu</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <main>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or inquiries, please fill out the form below:</p>
 
-  <main>
-    <h2><ins>Contact Us</ins></h2>
-    <p>If you have any questions or inquiries, please fill out the form below.</p>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name">Name (required):</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
 
-    <form action="" method="POST">
-      <fieldset>
-        <legend>Personal Details</legend>
+                    <label for="email">Email (required):</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
 
-        <label for="name">Name (required):</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+                    <label for="tel">Telephone:</label><br>
+                    <input type="tel" id="tel" name="tel"><br><br>
+                </fieldset>
 
-        <label for="email">Email (required):</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+                <fieldset>
+                    <legend>Enquiry</legend>
+                    <label for="enquiry-type">Enquiry Type:</label><br>
+                    <select id="enquiry-type" name="enquiry-type">
+                        <option value="general">General</option>
+                        <option value="support">Support</option>
+                        <option value="feedback">Feedback</option>
+                    </select><br><br>
 
-        <label for="tel">Telephone:</label><br>
-        <input list="tel-prefixes" id="tel" name="tel">
-        <datalist id="tel-prefixes">
-          <option value="+60">
-          <option value="+61">
-          <option value="+65">
-        </datalist><br><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+                </fieldset>
 
-        <label for="website">Website:</label><br>
-        <input list="website-options" id="website" name="website">
-        <datalist id="website-options">
-          <option value="http://">
-          <option value="https://">
-        </datalist><br><br>
-      </fieldset>
+                <input type="submit" value="Send Enquiry">
+            </form>
+        </section>
+    </main>
 
-      <fieldset>
-        <legend>Enquiry Information</legend>
-
-        <label for="enquiry-title">Title:</label><br>
-        <input type="text" id="enquiry-title" name="enquiry-title"><br><br>
-
-        <label for="enquiry-type">Enquiry Type:</label><br>
-        <select id="enquiry-type" name="enquiry-type">
-          <option value="general">General</option>
-          <option value="support">Support</option>
-          <option value="feedback">Feedback</option>
-        </select><br><br>
-
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" rows="5" cols="40"></textarea><br><br>
-      </fieldset>
-
-      <input type="submit" value="Send Enquiry">
-    </form>
-   
-  </main>
-
- <footer>
-  <p>
-    <small>&copy; 2025</small><br>
-    <a href="https://penangmaker.com/" target="_blank">
-      This is a student assignment from Han Chiang High School Makers Club.
-    </a>
-  </p>
-  <p>123, Jalan Piza, 17220 Georgetown, Penang</p>
-  <p>Tel: 04-811 1111</p>
-</footer>
-
-</body> 
+    <footer>
+        <small>Copyright &copy; 2025</small><br>
+        <a href="https://penangmaker.com/" target="_blank">This is a student assignment from Han Chiang High School Makers Club.</a><br>
+        <p>123, Jalan Pizza, 17220 Georgetown, Penang</p>
+        <p>Tel: 04-811 1111</p>
+    </footer>
+</body>
 </html>
