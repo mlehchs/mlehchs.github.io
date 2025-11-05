@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url('images/pizza-background.jpg') no-repeat center center fixed; /* Add your background image here */
+    background: url('images/pizza.background.jpg') no-repeat center center fixed; /* Add your background image here */
     background-size: cover;
     color: #ffffff;
     line-height: 1.6;
