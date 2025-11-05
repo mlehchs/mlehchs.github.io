@@ -1,4 +1,5 @@
-{
+/* Reset and basic styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,21 +7,18 @@
 }
 
 body {
-    background-color: #000000; 
-    color: #ffffff; 
+    background-color: #0a3d62; /* dark blue fallback */
+    background-image: url('images/pizza-background.jpg'); /* your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffffff;
     line-height: 1.6;
 }
 
-
-header, footer {
-    background-color: #111111;
-    padding: 20px;
-    text-align: center;
-}
-
-
+/* Header and navigation */
 header {
-    background-color: #ff7043;
+    background-color: rgba(52, 152, 219, 0.9); /* light blue with transparency */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -31,18 +29,12 @@ header h1 {
     margin-bottom: 10px;
 }
 
-header h3 {
-    font-size: 1.2em;
-    font-weight: normal;
-    margin-bottom: 10px;
-}
-
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: #ff8a65;
+    background-color: rgba(41, 128, 185, 0.9); /* slightly darker blue */
 }
 
 nav ul li {
@@ -56,23 +48,28 @@ nav ul li a {
     transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffe0b2;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #d6eaf8; /* lighter blue for hover/active */
 }
 
+/* Main content */
 main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+    border-radius: 10px;
 }
 
-section {
+section, .menu-section {
     margin-bottom: 30px;
 }
 
-article p {
+article p, .menu-item p {
     font-size: 1.1em;
     margin-bottom: 15px;
+    color: #f0f0f0;
 }
 
 h2, h3, h4 {
@@ -80,37 +77,56 @@ h2, h3, h4 {
 }
 
 h2 {
-    color: #ff5722;
+    color: #5dade2;
 }
 
 h3 {
-    color: #ff7043;
+    color: #85c1e9;
 }
 
 h4 {
-    color: #795548;
+    color: #aed6f1;
 }
 
-form {
-    background-color: #fff3e0;
-    padding: 20px;
-    border: 2px solid #ffccbc;
+/* Menu items */
+.menu-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
     border-radius: 8px;
+    margin-bottom: 15px;
+    flex: 0 1 48%;
+}
+
+/* Forms */
+form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border: 2px solid #2980b9;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 fieldset {
-    border: 1px solid #ffab91;
+    border: 1px solid #3498db;
     padding: 15px;
     margin-bottom: 15px;
 }
 
 legend {
     font-weight: bold;
-    color: #d84315;
+    color: #d6eaf8;
 }
 
 label {
     font-weight: bold;
+    display: block;
+    margin-top: 10px;
 }
 
 input[type="text"],
@@ -123,11 +139,13 @@ textarea {
     margin-top: 5px;
     margin-bottom: 10px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #2980b9;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 input[type="submit"] {
-    background-color: #ff5722;
+    background-color: #3498db;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -138,15 +156,17 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #e64a19;
+    background-color: #21618c;
 }
 
+/* Footer */
 footer {
-    background-color: #ff7043;
+    background-color: rgba(41, 128, 185, 0.9);
     color: white;
     text-align: center;
     padding: 15px 10px;
     margin-top: 30px;
+    font-size: 0.9em;
 }
 
 footer a {
@@ -155,9 +175,10 @@ footer a {
 }
 
 footer a:hover {
-    color: #ffe0b2;
+    color: #d6eaf8;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -165,5 +186,9 @@ footer a:hover {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .menu-item {
+        flex: 0 1 100%;
     }
 }
