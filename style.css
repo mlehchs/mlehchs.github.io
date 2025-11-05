@@ -1,5 +1,4 @@
-/* Reset and basic styles */
-* {
+ {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,8 +6,8 @@
 }
 
 body {
-    background-color: #0a3d62; /* dark blue fallback */
-    background-image: url('images/pizza-background.jpg'); /* your background image */
+    background-color: #0a3d62; 
+    background-image: url('images/pizza-background.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -16,9 +15,8 @@ body {
     line-height: 1.6;
 }
 
-/* Header and navigation */
 header {
-    background-color: rgba(52, 152, 219, 0.9); /* light blue with transparency */
+    background-color: rgba(52, 152, 219, 0.9); 
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -34,7 +32,7 @@ nav ul {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    background-color: rgba(41, 128, 185, 0.9); /* slightly darker blue */
+    background-color: rgba(41, 128, 185, 0.9); 
 }
 
 nav ul li {
@@ -50,15 +48,14 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: #d6eaf8; /* lighter blue for hover/active */
+    color: #d6eaf8;
 }
 
-/* Main content */
 main {
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background for readability */
+    background-color: rgba(0, 0, 0, 0.5); 
     border-radius: 10px;
 }
 
@@ -88,7 +85,6 @@ h4 {
     color: #aed6f1;
 }
 
-/* Menu items */
 .menu-section {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +99,6 @@ h4 {
     flex: 0 1 48%;
 }
 
-/* Forms */
 form {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -159,7 +154,6 @@ input[type="submit"]:hover {
     background-color: #21618c;
 }
 
-/* Footer */
 footer {
     background-color: rgba(41, 128, 185, 0.9);
     color: white;
@@ -178,7 +172,6 @@ footer a:hover {
     color: #d6eaf8;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
