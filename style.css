@@ -1,17 +1,14 @@
-/* === Global Reset === */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* === Google Fonts === */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap');
 
-/* === Body === */
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  background-color: #b3e5fc; /* light blue fallback */
+  background-color: #b3e5fc; 
   background-image: url("images/pizza-background.jpg");
   background-size: cover;
   background-position: center;
@@ -20,7 +17,6 @@ body {
   line-height: 1.6;
 }
 
-/* === Header === */
 header {
   background-color: rgba(0, 102, 204, 0.9);
   color: white;
@@ -35,7 +31,6 @@ header h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* === Navigation === */
 nav ul {
   list-style: none;
   display: flex;
@@ -59,7 +54,6 @@ nav ul li a.active {
   text-decoration: underline;
 }
 
-/* === Main Content === */
 main {
   max-width: 900px;
   margin: 20px auto;
@@ -82,7 +76,6 @@ p {
   margin-right: auto;
 }
 
-/* === Menu Section === */
 .menu-section {
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +98,6 @@ p {
   transform: scale(1.05);
 }
 
-/* === Forms === */
 form {
   background-color: #e1f5fe;
   padding: 20px;
@@ -153,7 +145,6 @@ input[type="submit"]:hover {
   background-color: #0277bd;
 }
 
-/* === Footer === */
 footer {
   background-color: rgba(0, 102, 204, 0.9);
   color: white;
@@ -174,11 +165,10 @@ footer a:hover {
 
 footer small {
   display: block;
-  font-size: 0.75em; /* visibly smaller than main text */
+  font-size: 0.75em; 
   margin-bottom: 8px;
 }
 
-/* === Responsive Design === */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
